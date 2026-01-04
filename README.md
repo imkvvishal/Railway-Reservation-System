@@ -2,10 +2,10 @@
 This is a Java-based Railway Reservation System project.
 It uses MYSQL Database for storing passenger and booking details.
 
-#Technologies Used
+Technology Used : 
 -Java
--MYSQL
--JDBC
+ MYSQL
+ JDBC
 
-#Description
+Descroption :
 This project demonstrates basic database connectivity and reservation logic.
