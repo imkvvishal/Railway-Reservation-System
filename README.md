@@ -7,5 +7,5 @@ Technology Used :
  MYSQL
  JDBC
 
-Descroption :
+Description :
 This project demonstrates basic database connectivity and reservation logic.
