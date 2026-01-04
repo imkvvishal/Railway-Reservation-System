@@ -8,8 +8,8 @@ public class railway1 {
     // Change this if your port or host is different
     static final String DB_URL = "jdbc:mysql://localhost:3306/railway_db";
     // *** REPLACE WITH YOUR ACTUAL MYSQL CREDENTIALS ***
-    static final String USER = "root"; 
-    static final String PASS = "88256Kvv@"; 
+    static final String USER = "MYSQL_username"; 
+    static final String PASS = "MYSQL_password"; 
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -207,3 +207,4 @@ public class railway1 {
         }
     }
 }
+
