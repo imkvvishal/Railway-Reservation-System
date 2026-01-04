@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class railway1 {
 
-    // 🔴 1. DATABASE CONFIGURATION - MUST BE UPDATED
+    //  1. DATABASE CONFIGURATION - MUST BE UPDATED
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     // Change this if your port or host is different
-    static final String DB_URL = "jdbc:mysql://localhost:3306/railway_db";
+    static final String DB_URL = "jdbc:mysql://localhost:3306/database_name";
     // *** REPLACE WITH YOUR ACTUAL MYSQL CREDENTIALS ***
     static final String USER = "MYSQL_username"; 
     static final String PASS = "MYSQL_password"; 
@@ -176,14 +176,14 @@ public class railway1 {
 
             // Commit Transaction: Success
             conn.commit(); 
-            System.out.println("\n✅ Ticket Booked Successfully!");
+            System.out.println("\n Ticket Booked Successfully!");
             System.out.println("PNR Number: " + pnr);
             System.out.println("Train No: " + trainNumber + ", Passenger: " + passengerName);
             System.out.println("Remaining Seats: " + (currentSeats - 1));
 
         } catch (SQLException se) {
             // Rollback Transaction on error
-            System.err.println("\n❌ Booking Failed due to a database error. Reverting changes.");
+            System.err.println("\n Booking Failed due to a database error. Reverting changes.");
             System.err.println("Error: " + se.getMessage());
             if (conn != null) {
                 try {
@@ -207,4 +207,5 @@ public class railway1 {
         }
     }
 }
+
 
